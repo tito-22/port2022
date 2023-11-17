@@ -20,6 +20,15 @@ onMounted(() => {
     </div>
     <div class="racoom neon-box" :class="{ 'page-loaded': pageLoaded }"></div>
   </div>
+  <footer>
+      <div class="social-icons">
+        <a href="enlace_a_red_social" target="_blank" rel="noopener noreferrer">
+          <!-- Puedes sustituir 'tu_icono_1.png' con la ruta de tu imagen -->
+          <img src="tu_icono_1.png" alt="Red Social 1">
+        </a>
+        <!-- Repite esto para cada red social -->
+      </div>
+    </footer>
 </template>
 
 <style>
@@ -80,6 +89,27 @@ onMounted(() => {
   margin: 5px;
 }
 
+footer {
+  background-color: #333; /* Cambia el color de fondo según tus preferencias */
+  padding: 20px;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: white; /* Color del icono de la red social */
+}
+
+.social-icons img {
+  width: 30px; /* Tamaño del icono, ajusta según sea necesario */
+  height: 30px;
+}
 .neon-box {
   box-shadow: 0 0 10px transparent, 0 0 20px transparent, 0 0 30px transparent,
     0 0 40px transparent, 0 0 50px transparent, 0 0 60px transparent,
