@@ -22,13 +22,21 @@ onMounted(() => {
   </div>
   <footer>
       <div class="social-icons">
-        <a href="enlace_a_red_social" target="_blank" rel="noopener noreferrer">
-          <!-- Puedes sustituir 'tu_icono_1.png' con la ruta de tu imagen -->
-          <img src="tu_icono_1.png" alt="Red Social 1">
+        <a href="https://www.youtube.com/channel/UC5pu18O7t82cRI_Oky52mJQ" target="_blank" rel="noopener noreferrer">
+          <img src="https://drive.google.com/uc?export=view&id=1UrBJ_MNShqUgMBBBj3hCwwje7psA5Zb7" alt="">
         </a>
-        <!-- Repite esto para cada red social -->
+         <a href="https://www.facebook.com/titoandres.rojastolosa" target="_blank" rel="noopener noreferrer">
+           <img src="https://drive.google.com/uc?export=view&id=1Tqk2MbUsZUGXRgBklf80x3m6yBiiDCgE" alt="">
+        </a>
+         <a href="https://twitter.com/?lang=es" target="_blank" rel="noopener noreferrer">
+           <img src="https://drive.google.com/uc?export=view&id=1kKFdAPyX9_zKUtTuZGFcVe7MUA3qhnLN" alt="">
+        </a>
+        <a href="https://www.twitch.tv/" target="_blank" rel="noopener noreferrer">
+           <img src="https://drive.google.com/uc?export=view&id=19l7Z00jUH-Ei2i_Tr-2ph6Uy60AdMQ_c" alt="">
+        </a>
       </div>
     </footer>
+    
 </template>
 
 <style>
@@ -64,7 +72,7 @@ onMounted(() => {
   height: 700px;
   width: 300px;
   background-color: red;
-  margin: 5px;
+
 }
 
 .ANIMATION {
@@ -75,7 +83,6 @@ onMounted(() => {
   height: 700px;
   width: 300px;
   background-color: rgba(255, 122, 0, 1);
-  margin: 5px;
 }
 
 .GAMES {
@@ -86,29 +93,21 @@ onMounted(() => {
   height: 700px;
   width: 300px;
   background-color: rgba(97, 0, 255, 1);
-  margin: 5px;
 }
 
 footer {
-  background-color: #333; /* Cambia el color de fondo según tus preferencias */
-  padding: 20px;
-  text-align: center;
+  text-align: end;
+ 
 }
 
 .social-icons {
   display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.social-icons a {
-  text-decoration: none;
-  color: white; /* Color del icono de la red social */
+  gap: 40px;
 }
 
 .social-icons img {
-  width: 30px; /* Tamaño del icono, ajusta según sea necesario */
-  height: 30px;
+  width: 70px; 
+  height: 60px;
 }
 .neon-box {
   box-shadow: 0 0 10px transparent, 0 0 20px transparent, 0 0 30px transparent,
@@ -120,6 +119,10 @@ footer {
 .neon-box:hover {
   box-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red, 0 0 40px red,
     0 0 50px red, 0 0 60px red, 0 0 70px red;
+}
+.racoom.neon-box:hover {
+  box-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255), 0 0 30px rgb(255, 255, 255), 0 0 40px rgb(255, 255, 255),
+    0 0 50px rgb(255, 255, 255), 0 0 60px rgb(255, 255, 255), 0 0 70px rgb(254, 254, 254);
 }
 
 .GAMES.neon-box:hover {
@@ -136,7 +139,52 @@ footer {
     0 0 70px rgba(255, 122, 0, 1);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1300px){
+
+ .firstpage {
+  display: flex;
+  gap: 50px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+  .Tresd {
+   height: 700px;
+  width: 270px;
+  }
+  .ANIMATION {
+    height: 700px;
+  width: 270px;
+  }
+  .GAMES {
+   height: 700px;
+  width: 270px;
+  }
+}
+@media screen and (max-width: 900px){
+
+ .firstpage {
+  display: flex;
+  gap: 30px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.Tresd {
+   height: 700px;
+  width: 250px;
+  }
+  .ANIMATION {
+    height: 700px;
+  width: 250px;
+  }
+  .GAMES {
+   height: 700px;
+  width: 250px;
+  }
+}
+
+@media screen and (max-width: 600px) {
   .firstpage {
     flex-direction: column;
     gap: 0px;
@@ -156,7 +204,7 @@ footer {
   .racoom {
     position: absolute;
     top: 90%;
-    left: 95%;
+    left: 86%;
     transform: translate(-50%, -50%);
     background-color: white;
     height: 150px;
@@ -164,4 +212,7 @@ footer {
     border-radius: 50%;
   }
 }
+
+
+
 </style>
