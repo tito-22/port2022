@@ -72,6 +72,7 @@ onMounted(() => {
   height: 700px;
   width: 300px;
   background-color: red;
+  border-radius: 20px;
 
 }
 
@@ -83,6 +84,7 @@ onMounted(() => {
   height: 700px;
   width: 300px;
   background-color: rgba(255, 122, 0, 1);
+  border-radius: 20px;
 }
 
 .GAMES {
@@ -93,6 +95,7 @@ onMounted(() => {
   height: 700px;
   width: 300px;
   background-color: rgba(97, 0, 255, 1);
+  border-radius: 20px;
 }
 
 footer {

@@ -2,9 +2,9 @@
 
 <template>
   <section class="container">
-    <div class="Dove"></div>
-    <div class="Racom2"></div>
-    <div class="Icarus"></div>
+    <div class="Dove"><h1>Dove</h1></div>
+    <div class="Racom2"><img src="" alt=""></div>
+    <div class="Icarus"><h2>Icarus</h2></div>
   </section>
 </template>
 
@@ -13,43 +13,40 @@
   position: relative;
   width: 100%;
   height: 100vh;
+  margin: 20px;
 }
 
 .Dove {
-  width: 50px; 
-  height: 50px;
-  background-color: red;
-  position: absolute;
-}
-.Icarus {
-  width: 50px; 
-  height: 50px;
-  background-color: red;
-  position: absolute;
-}
-
-.Racom2 {
-  width: 100px; 
-  height: 100px;
-  background-color: red;
+  width: 700px; 
+  height: 200px;
+  background-color: rgba(255, 122, 0, 1);
   position: absolute;
   border-radius: 20px;
+  top: 0;
+  right: 30px;
+}
+.Icarus {
+  width: 700px; 
+  height: 200px;
+  background-color: rgba(255, 122, 0, 1);
+  position: absolute;
+  border-radius: 20px;
+  bottom: 0;
+  left: 30px;
 }
 
-.Dove {
-  top: 0;
-  right: 0;
-}
 
 .Racom2 {
+  width: 150px; 
+  height: 150px;
+  background-color: rgba(255, 122, 0, 1);
+  position: absolute;
+  border-radius: 20px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
 }
 
-.Icarus {
-  bottom: 0;
-  left: 0;
-}
+
+
 </style>
