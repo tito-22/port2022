@@ -2,8 +2,10 @@
 
 <template>
   <section class="container">
-    ABOUT
+ GAMES
   </section>
 </template>
 
-<style scoped></style>
+<style scoped>
+
+</style>
