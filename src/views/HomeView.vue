@@ -1,6 +1,6 @@
 <script setup>
 import { ref, onMounted } from "vue";
-import {useRouter} from "vue-router"
+import { useRouter } from "vue-router"
 
 const router = useRouter()
 
@@ -17,31 +17,36 @@ onMounted(() => {
 <template>
   <div>
     <div class="firstpage" :class="{ 'page-loaded': pageLoaded }">
-      <div class="Tresd neon-box" @click="router.push({name: '3d'})">
-        <p>3D</p>
+      <div class="Tresd neon-box" @click="router.push({ name: '3d' })">
+        <p class="section-title">3D</p>
       </div>
-      <div class="ANIMATION neon-box" @click="router.push({name: 'animation'})">
-        <p>ANIMATION</p>
+      <div class="ANIMATION neon-box" @click="router.push({ name: 'animation' })">
+        <p class="section-title">ANIMATION</p>
       </div>
-      <div class="GAMES neon-box" @click="router.push({name: 'games'})">
-        <p>GAMES</p>
+      <div class="GAMES neon-box" @click="router.push({ name: 'games' })">
+        <p class="section-title">GAMES</p>
       </div>
     </div>
-    <div class="racoom neon-box" :class="{ 'page-loaded': pageLoaded }"></div>
+    <div class="racoom neon-box" :class="{ 'page-loaded': pageLoaded }">
+      <img src="https://drive.google.com/uc?export=view&id=1oBZUqEABdAdScCmxf5oJHKSs7TklZE1T" alt="" class="image" />
+    </div>
   </div>
   <footer>
     <div class="social-icons">
       <a href="https://www.youtube.com/channel/UC5pu18O7t82cRI_Oky52mJQ" target="_blank" rel="noopener noreferrer">
-        <img src="https://drive.google.com/uc?export=view&id=1UrBJ_MNShqUgMBBBj3hCwwje7psA5Zb7" alt="">
+        <img src="https://drive.google.com/uc?export=view&id=1FwDtWxUkjPepiPwR-EUSKw36efnHWfC5" alt="">
       </a>
       <a href="https://www.facebook.com/titoandres.rojastolosa" target="_blank" rel="noopener noreferrer">
-        <img src="https://drive.google.com/uc?export=view&id=1Tqk2MbUsZUGXRgBklf80x3m6yBiiDCgE" alt="">
+        <img src="https://drive.google.com/uc?export=view&id=1ASCMNumaCP2gf479jOsnjm27TdI42cNF" alt="">
       </a>
       <a href="https://twitter.com/?lang=es" target="_blank" rel="noopener noreferrer">
-        <img src="https://drive.google.com/uc?export=view&id=1kKFdAPyX9_zKUtTuZGFcVe7MUA3qhnLN" alt="">
+        <img src="https://drive.google.com/uc?export=view&id=1cqiLGd4YE_q8KkXdBvvKOHYak1A0Hh_K" alt="">
       </a>
-      <a href="https://www.twitch.tv/" target="_blank" rel="noopener noreferrer">
-        <img src="https://drive.google.com/uc?export=view&id=19l7Z00jUH-Ei2i_Tr-2ph6Uy60AdMQ_c" alt="">
+      <a href="https://www.twitch.tv/eltitovard" target="_blank" rel="noopener noreferrer">
+        <img src="https://drive.google.com/uc?export=view&id=1YeYuVWLtz1vWGfnEUyJ7VyIaQgw61hka" alt="">
+      </a>
+      <a href="https://www.instagram.com/titowhat34/" target="_blank" rel="noopener noreferrer">
+        <img src="https://drive.google.com/uc?export=view&id=1u470uez0zxgO9eldiD69J_YLI_yaZkZA" alt="">
       </a>
     </div>
   </footer>
@@ -57,6 +62,14 @@ onMounted(() => {
   height: 150px;
   width: 150px;
   border-radius: 50%;
+
+}
+
+.image {
+  width: 70%;
+  height: auto;
+  left: 20px;
+  top: 15px;
 }
 
 .firstpage {
@@ -117,8 +130,8 @@ footer {
 }
 
 .social-icons img {
-  width: 70px;
-  height: 60px;
+  width: 90%;
+  height: 40px;
 }
 
 .neon-box {
@@ -150,6 +163,18 @@ footer {
     0 0 30px rgba(255, 122, 0, 1), 0 0 40px rgba(255, 122, 0, 1),
     0 0 50px rgba(255, 122, 0, 1), 0 0 60px rgba(255, 122, 0, 1),
     0 0 70px rgba(255, 122, 0, 1);
+}
+
+.section-title {
+  position: absolute;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: lazar;
+  right: 20px;
+  bottom: 20px;
+  transform: translateX(100%) rotate(-90deg);
+  transform-origin: 0% 100%;
 }
 
 @media screen and (max-width: 1300px) {
@@ -221,5 +246,6 @@ footer {
     width: 150px;
     border-radius: 50%;
   }
-}</style>
+}
+</style>
 
