@@ -11,7 +11,7 @@ const startAnimation = (element) => {
 const stopAnimation = (element) => {
   const target = document.querySelector(`.${element}`);
   if (target) {
-    target.style.transform = 'scale(1)';
+    target.style.transform = 'scale(1)'; 
   }
 };
 </script>
@@ -27,7 +27,7 @@ const stopAnimation = (element) => {
           <p class="section-title">Icarus</p>
         </div>
         <div class="castle" @mouseover="startAnimation('castle')" @mouseout="stopAnimation('castle')">
-          <p class="section-title">Castle</p>
+          <p class="section-title">Kart</p>
         </div>
       </div>
     </div>
@@ -52,7 +52,7 @@ const stopAnimation = (element) => {
 
 .row {
   display: flex;
-  gap: 20px;
+  gap: 40px;
 }
 
 .right-section {
@@ -66,7 +66,9 @@ const stopAnimation = (element) => {
   width: 150px;
   border-radius: 30%;
   margin-top: 20px;
-  transition: transform 0.3s ease; /* Agrega una transición a la propiedad transform */
+  transition: transform 0.3s ease;
+  left: 12px;
+  
 }
 
 .Icarus,
@@ -82,7 +84,8 @@ const stopAnimation = (element) => {
   border-radius: 20px;
   position: relative;
   overflow: hidden;
-  transition: transform 0.3s ease; /* Agrega una transición a la propiedad transform */
+  transition: transform 0.3s ease; 
+  
 }
 
 .section-title {
@@ -146,7 +149,7 @@ const stopAnimation = (element) => {
     border-radius: 30%;
     margin-top: 20px;
     transition: transform 0.3s ease; 
-    order: 24px; 
+    
   }
 }
 </style>

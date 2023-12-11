@@ -2,7 +2,7 @@
 
 <template>
   <section class="container">
-    ABOUT
+
   </section>
 </template>
 
