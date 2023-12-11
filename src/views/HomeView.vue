@@ -39,7 +39,7 @@ onMounted(() => {
       <a href="https://www.facebook.com/titoandres.rojastolosa" target="_blank" rel="noopener noreferrer">
         <img src="https://drive.google.com/uc?export=view&id=1ASCMNumaCP2gf479jOsnjm27TdI42cNF" alt="">
       </a>
-      <a href="https://twitter.com/?lang=es" target="_blank" rel="noopener noreferrer">
+      <a href="https://twitter.com/3AGStudy" target="_blank" rel="noopener noreferrer">
         <img src="https://drive.google.com/uc?export=view&id=1cqiLGd4YE_q8KkXdBvvKOHYak1A0Hh_K" alt="">
       </a>
       <a href="https://www.twitch.tv/eltitovard" target="_blank" rel="noopener noreferrer">
@@ -170,11 +170,25 @@ footer {
   color: white;
   font-size: 2rem;
   font-weight: bold;
-  font-style: lazar;
+  font-style: italic;
   right: 20px;
   bottom: 20px;
-  transform: translateX(100%) rotate(-90deg);
-  transform-origin: 0% 100%;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Tresd:hover .section-title,
+.ANIMATION:hover .section-title,
+.GAMES:hover .section-title {
+  opacity: 1;
+  transform: translateY(0);
+}
+footer .social-icons {
+  display: flex;
+  align-items: flex-end;
+  top: 20px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -201,6 +215,7 @@ footer {
     height: 500px;
     width: 270px;
   }
+ 
 }
 
 @media screen and (max-width: 900px) {
@@ -213,39 +228,44 @@ footer {
     transition: opacity 1s ease, transform 1s ease;
   }
 
+
 }
 
 @media screen and (max-width: 600px) {
   .firstpage {
     flex-direction: column;
-    gap: 0px;
+    gap: 10px;
   }
 
   .Tresd {
-    height: 200px;
-    width: 500px;
+    height: 150px;
+    width: 400px;
   }
 
   .ANIMATION {
-    height: 200px;
-    width: 500px;
+    height: 150px;
+    width: 400px;
   }
 
   .GAMES {
-    height: 200px;
-    width: 500px;
+    height: 150px;
+    width: 400px;
   }
 
   .racoom {
     position: absolute;
     top: 90%;
-    left: 86%;
+    left: 90%;
     transform: translate(-50%, -50%);
     background-color: white;
-    height: 150px;
-    width: 150px;
+    height: 120px;
+    width: 120px;
     border-radius: 50%;
+
   }
+
+
+
 }
 </style>
 

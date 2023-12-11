@@ -2,9 +2,15 @@
 
 <template>
   <section class="container">
-    <div class="Dove"><h1>Dove</h1></div>
-    <div class="Racom2"><img src="" alt=""></div>
-    <div class="Icarus"><h2>Icarus</h2></div>
+    <div class="Dove">
+      <h1 class="section-title">Dove</h1>
+    </div>
+    <div class="racoom2">
+      <img src="https://drive.google.com/uc?export=view&id=1qeI6kL5awBvpozBxCm8ekDhA3iXVNA82" alt="" class="image" />
+    </div>
+    <div class="Icarus">
+      <h2 class="section-title">Icarus</h2>
+    </div>
   </section>
 </template>
 
@@ -16,28 +22,27 @@
   margin: 20px;
 }
 
-.Dove {
-  width: 700px; 
+.Dove,
+.Icarus {
+  width: 700px;
   height: 200px;
   background-color: rgba(255, 122, 0, 1);
   position: absolute;
   border-radius: 20px;
+}
+
+.Dove {
   top: 0;
   right: 30px;
 }
+
 .Icarus {
-  width: 700px; 
-  height: 200px;
-  background-color: rgba(255, 122, 0, 1);
-  position: absolute;
-  border-radius: 20px;
   bottom: 0;
   left: 30px;
 }
 
-
-.Racom2 {
-  width: 150px; 
+.racoom2 {
+  width: 150px;
   height: 150px;
   background-color: rgba(255, 122, 0, 1);
   position: absolute;
@@ -47,8 +52,23 @@
   transform: translate(-50%, -50%);
 }
 
-@media screen and (max-width: 600px) {
-
+.section-title {
+  position: absolute;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
+  right: 20px;
+  bottom: 20px;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.Dove:hover .section-title,
+.Icarus:hover .section-title {
+  transform: translateY(0%);
+  opacity: 1;
+}
 </style>
