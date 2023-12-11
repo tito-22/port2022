@@ -72,4 +72,25 @@
   transform: translateY(0%);
   opacity: 1;
 }
+
+@media screen and (max-width: 600px) {
+
+  .GoRazer,
+.castle {
+  height: 100px;
+  width: 240px;
+  background-color: rgba(97, 0, 255, 1);
+  border-radius: 20px;
+  position: relative;
+}
+.racoom2 {
+  position: relative;
+  background-color: rgba(97, 0, 255, 1);
+  height: 150px;
+  width: 150px;
+  border-radius: 30%;
+  top: 100px;
+  left: 20px;
+}
+}
 </style>

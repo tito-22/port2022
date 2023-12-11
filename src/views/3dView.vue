@@ -120,4 +120,33 @@ const stopAnimation = (element) => {
   opacity: 1;
   transform: translateY(0) translateX(-10px);
 }
+
+@media screen and (max-width: 600px) {
+  .Icarus,
+  .House,
+  .castle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 150px;
+    background-color: red;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease; 
+  }
+
+  .racoom3 {
+    position: relative;
+    background-color: red;
+    height: 150px;
+    width: 150px;
+    border-radius: 30%;
+    margin-top: 20px;
+    transition: transform 0.3s ease; 
+    order: 24px; 
+  }
+}
 </style>

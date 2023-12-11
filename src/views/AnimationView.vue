@@ -71,4 +71,17 @@
   transform: translateY(0%);
   opacity: 1;
 }
+
+@media screen and (max-width: 600px) {
+
+  .Dove,
+.Icarus {
+  width: 400px;
+  height: 200px;
+  background-color: rgba(255, 122, 0, 1);
+  position: absolute;
+  border-radius: 20px;
+}
+
+}
 </style>
