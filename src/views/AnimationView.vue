@@ -2,15 +2,15 @@
 
 <template>
   <section class="container">
-    <div class="Dove">
+    <a href="https://drive.google.com/file/d/1zTSrckYThINEBxzoZV_2vVBlrvp3dIvU/view?t=12" target="_blank" class="Dove">
       <h1 class="section-title">Dove</h1>
-    </div>
+    </a>
     <div class="racoom2">
       <img src="https://drive.google.com/uc?export=view&id=1qeI6kL5awBvpozBxCm8ekDhA3iXVNA82" alt="" class="image" />
     </div>
-    <div class="Icarus">
+    <a href="https://drive.google.com/file/d/1I5OpHeChE9FxSJs3l0dSHxqqwZNrWcEi/view?t=2" target="_blank" class="Icarus">
       <h2 class="section-title">Icarus</h2>
-    </div>
+    </a>
   </section>
 </template>
 

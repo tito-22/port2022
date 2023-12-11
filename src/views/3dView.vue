@@ -20,15 +20,15 @@ const stopAnimation = (element) => {
   <section class="container">
     <div class="left-section">
       <div class="row">
-        <div class="House" @mouseover="startAnimation('House')" @mouseout="stopAnimation('House')">
+        <a href="https://drive.google.com/uc?export=view&id=15AOzZ6IGbkM7cv4KEMco1dC6_5QnSAgV " target="_blank" class="House" @mouseover="startAnimation('House')" @mouseout="stopAnimation('House')">
           <p class="section-title">House</p>
-        </div>
-        <div class="Icarus" @mouseover="startAnimation('Icarus')" @mouseout="stopAnimation('Icarus')">
+        </a>
+        <a href="https://drive.google.com/uc?export=view&id=1qeI6kL5awBvpozBxCm8ekDhA3iXVNA82" target="_blank" class="Icarus" @mouseover="startAnimation('Icarus')" @mouseout="stopAnimation('Icarus')">
           <p class="section-title">Icarus</p>
-        </div>
-        <div class="castle" @mouseover="startAnimation('castle')" @mouseout="stopAnimation('castle')">
+        </a>
+        <a href="https://drive.google.com/uc?export=view&id=1qeI6kL5awBvpozBxCm8ekDhA3iXVNA82" target="_blank" class="castle" @mouseover="startAnimation('castle')" @mouseout="stopAnimation('castle')">
           <p class="section-title">Kart</p>
-        </div>
+        </a>
       </div>
     </div>
     <div class="right-section">

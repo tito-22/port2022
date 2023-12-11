@@ -28,8 +28,10 @@ onMounted(() => {
       </div>
     </div>
     <div class="racoom neon-box" :class="{ 'page-loaded': pageLoaded }">
+      <div class="racoom neon-box" @click="router.push({ name: 'about' })">
       <img src="https://drive.google.com/uc?export=view&id=1oBZUqEABdAdScCmxf5oJHKSs7TklZE1T" alt="" class="image" />
-    </div>
+     </div>
+   </div>
   </div>
   <footer>
     <div class="social-icons">
